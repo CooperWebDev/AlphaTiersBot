@@ -1,0 +1,26 @@
+{
+  "name": "javascriptcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@discordjs/rest": "^2.4.2",
+    "@supabase/supabase-js": "^2.39.0",
+    "axios": "^1.13.2",
+    "cheerio": "^1.0.0",
+    "discord-api-types": "^0.37.119",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7",
+    "googleapis": "^144.0.0",
+    "playwright": "^1.52.0",
+    "puppeteer": "^24.8.2",
+    "puppeteer-core": "^24.8.2",
+    "ws": "^8.18.0"
+  }
+}
