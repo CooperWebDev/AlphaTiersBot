@@ -16,8 +16,18 @@ const {
   Routes
 } = require('discord.js');
 require('dotenv').config();
+const http = require('http');
 const https = require('https');
 const axios = require('axios');
+
+// Minimal health endpoint for Render web service port binding
+const port = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('ok');
+}).listen(port, () => {
+  console.log(`Health server listening on port ${port}`);
+});
 
 // Helper function to fetch Mojang UUID using native HTTPS
 function fetchMojangUUID(ign) {
